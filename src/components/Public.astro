@@ -1,0 +1,132 @@
+---
+import BookPhoto from "../assets/book.jpg";
+---
+
+<!-- Card Blog -->
+
+    <!-- Title -->
+    <div class="max-w-2xl mx-auto text-center">
+        <h2
+            class="block text-xl font-heading font-bold text-secondary sm:text-xl lg:text-4xl lg:leading-tight dark:text-accent"
+        >
+            Dzielę się wiedzą...
+        </h2>
+        <p class="mt-5 text-base text-primary dark:text-accent-100">
+            Wiedzą o psach i kotach dzielę się nie tylko podczas konsultacji, ale również w książkach, publikacjach i codziennych rozmowach. Łączę wieloletnie doświadczenie z aktualną wiedzą, by skutecznie wspierać zarówno zwierzęta, jak i ich opiekunów w codziennym życiu.
+        </p>
+    </div>
+    <!-- End Title -->
+
+    <!-- Grid -->
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
+        <!-- Card -->
+        <a class="group flex flex-col focus:outline-hidden" href="https://drogerienatura.pl/magazyn" target="_blank">
+            <div
+                class="relative pt-[50%] sm:pt-[70%] rounded-[10px] overflow-hidden"
+            >
+                <img
+                    class="size-full absolute top-0 start-0 object-cover group-hover:scale-105 group-focus:scale-105 transition-transform duration-500 ease-in-out rounded-[10px]"
+                    src="https://images.unsplash.com/photo-1632498301446-5f78baad40d0?q=80&w=800&h=800&auto=format&fit=crop"
+                    alt="Blog Image"
+                />
+                <span
+                    class="absolute top-0 end-0 rounded-se-xl rounded-es-xl text-xs font-medium bg-primary text-accent-300 py-2 px-4 dark:bg-neutral-900"
+                >
+                    Publikacje
+                </span>
+            </div>
+
+            <div class="mt-10">
+                <h3
+                    class="text-2xl font-semibold font-heading text-primary group-hover:text-secondary dark:text-neutral-300 dark:group-hover:text-white transition-all duration-500"
+                >
+                    Magazyn Natura
+                </h3>
+                <p class="mt-5 text-base text-primary dark:text-accent-100">
+                    Tworzę artykuły edukacyjne dotyczące życia z naszymi podopiecznymi – psami i kotami. Piszę z perspektywy praktyka, który każdego dnia wspiera opiekunów w budowaniu lepszej relacji ze zwierzęciem.
+                </p>
+                <p
+                    class="mt-5 inline-flex transition-all duration-500 text-base text-secondary decoration-1 group-hover:text-primary underline focus:underline font-medium dark:text-accent-300 underline-offset-8 dark:group-hover:text-accent-200"
+                >
+                    Poczytaj
+                </p>
+            </div>
+        </a>
+        <!-- End Card -->
+
+        <!-- Card -->
+        <a class="group flex flex-col focus:outline-hidden" href="https://www.youtube.com/watch?v=B_J19Kegss4" target="_blank">
+            <div
+                class="relative pt-[50%] sm:pt-[70%] rounded-[10px] overflow-hidden"
+            >
+                <img
+                    class="size-full absolute top-0 start-0 object-cover group-hover:scale-105 group-focus:scale-105 transition-transform duration-500 ease-in-out rounded-[10px]"
+                    src="https://images.unsplash.com/photo-1632498301446-5f78baad40d0?q=80&w=800&h=800&auto=format&fit=crop"
+                    alt="Blog Image"
+                />
+                <span
+                    class="absolute top-0 end-0 rounded-se-xl rounded-es-xl text-xs font-medium bg-primary text-accent-300 py-2 px-4 dark:bg-neutral-900"
+                >
+                    Rozmowa
+                </span>
+            </div>
+
+            <div class="mt-10">
+                <h3
+                    class="text-2xl font-semibold font-heading text-primary group-hover:text-secondary dark:text-neutral-300 dark:group-hover:text-white transition-all duration-500"
+                >
+                    „Dla kogo kot?” – rozmowa z Karoliną Korwin Piotrowską
+                </h3>
+                <p class="mt-5 text-base text-primary dark:text-accent-100">
+                    Zapraszam do wysłuchania nagrania wyjątkowej rozmowy, która odbyła się podczas wydarzenia Ktoś, nie Coś w Warszawie, 21–22 października 2023 roku. Wraz z Karoliną Korwin Piotrowską rozmawiamy o tym, czym naprawdę jest odpowiedzialność za kota, jak wygląda wspólne życie z tym niezwykłym zwierzęciem i dlaczego warto patrzeć na niego jak na pełnoprawnego członka rodziny.
+                </p>
+                <p
+                    class="mt-5 inline-flex transition-all duration-500 text-base text-secondary decoration-1 group-hover:text-primary underline focus:underline font-medium dark:text-accent-300 underline-offset-8 dark:group-hover:text-accent-200"
+                >
+                    Posłuchaj tej rozmowy
+                </p>
+            </div>
+        </a>
+        <!-- End Card -->
+
+        <!-- Card -->
+        <a
+            class="group relative flex flex-col w-full min-h-60 rounded-[10px] focus:outline-hidden transition relative"
+            href="https://lubimyczytac.pl/ksiazka/5034043/zamieszka-l-ze-mna-kot" target="_blank"
+        >
+        <span
+                    class="absolute top-0 end-0 rounded-se-xl rounded-es-xl text-xs font-medium bg-primary text-accent-300 py-2 px-4 dark:bg-neutral-900"
+                >
+                    Książka
+                </span>
+
+            <img
+                class="w-full absolute top-0 left-0 h-full -z-10 object-cover rounded-[10px]"
+                src={BookPhoto.src}
+                alt="Aleksanda Zawadzka-Glinka Behawiorystka Zwierząt Towarzyszących"
+            />
+
+            <div class="flex-auto p-8 md:p-8 relative z-10">
+                <h3 class="text-4xl font-semibold font-heading text-accent-100 group-hover:text-white mb-2">
+                    Zamieszka(ł) ze mną kot
+                </h3>
+                <h4 class="text-base font-regular font-content text-accent-100 group-hover:text-white">
+                    Aleksanda Zawadzka-Glinka
+                </h4>
+                <p class="text-sm font-regular font-content text-accent-100 opacity-50 group-hover:text-white">
+                    Wydawnictwo: EMG
+                </p>
+            </div>
+            <div class="pt-0 p-4 md:p-6 relative z-10">
+                <div
+                    class="inline-flex items-center gap-2 text-base font-bold font-medium text-white group-hover:text-white/70 group-focus:text-white/70"
+                >
+                    Kup książkę!
+                </div>
+            </div>
+        </a>
+        <!-- End Card -->
+    </div>
+    <!-- End Grid -->
+
+<!-- End Card Blog -->

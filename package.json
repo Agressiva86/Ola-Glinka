@@ -9,6 +9,14 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^5.10.1"
+    "@tailwindcss/vite": "^4.1.10",
+    "astro": "^5.10.1",
+    "astro-icon": "^1.1.5",
+    "tailwindcss": "^4.1.10"
+  },
+  "devDependencies": {
+    "@iconify-json/simple-icons": "^1.2.38",
+    "@iconify-json/streamline-ultimate": "^1.2.0",
+    "tailwindcss-palette-generator": "^1.5.0"
   }
 }

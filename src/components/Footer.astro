@@ -1,0 +1,61 @@
+---
+import OlaLogo from "../components/OlaLogo.astro";
+import { Icon } from 'astro-icon/components';
+---
+
+<!-- ========== FOOTER ========== -->
+<footer class="py-20 grid grid-rows-1 gap-y-10 justify-items-center text-center">
+    
+    <OlaLogo />
+
+    <!-- End Col -->
+
+    <div>
+        <p class="text-sm text-primary-300 dark:text-primary-300">
+            © 2025 Aleksandra Zawadzka-Glinka Behawiorystka. All rights reserved.
+        </p>
+        <p class="text-sm text-primary-300 dark:text-primary-300 mt-3">
+            Powered by <a
+                class="text-primary-300 decoration-1 hover:underline focus:outline-hidden focus:underline"
+                href="https://astro.build/" target="_blank">Astro</a
+            > & <a
+                class="text-primary-300 decoration-1 hover:underline focus:outline-hidden focus:underline"
+                href="https://agnieszkapalmowska.myportfolio.com/" target="_blank">Agnieszka Palmowska Design</a
+            >
+        </p>
+    </div>
+
+    <!-- Social Brands -->
+    <div class="flex flex-row flex-wrap gap-4 space-x-2">
+        <a
+            href="https://www.facebook.com/zawadzkaglinka"
+            target="_blank"
+            class="group"
+            ><Icon
+                name="simple-icons:facebook"
+                class="text-primary text-base group-hover:text-accent transition-all duration-300 dark:text-white dark:hover:text-secondary"
+            /></a
+        >
+        <a
+            href="https://www.instagram.com/zawadzkaglinka/"
+            target="_blank"
+            class="group"
+            ><Icon
+                name="simple-icons:instagram"
+                class="text-primary text-base group-hover:text-accent transition-all duration-300 dark:text-white dark:hover:text-secondary"
+            /></a
+        >
+        <a
+            href="mailto:zawadzkaglinka@gmail.com"
+            target="_blank"
+            class="group"
+            ><Icon
+                name="simple-icons:gmail"
+                class="text-primary text-base group-hover:text-accent transition-all duration-300 dark:text-white dark:hover:text-secondary"
+            /></a
+        >
+    </div>
+    <!-- End Social Brands -->
+
+</footer>
+<!-- ========== END FOOTER ========== -->
