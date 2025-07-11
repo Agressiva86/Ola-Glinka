@@ -1,5 +1,18 @@
 ---
-import GoldenPhoto from "../assets/golden.jpg";
+import { Image } from 'astro:assets';
+
+const { 
+    title,
+    image,
+    link
+} = Astro.props;
+
+const images = import.meta.glob('/src/assets/*.{jpeg,jpg,png,gif}');
+
+if (!images[image]) throw new Error(`"${image}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif}"`);
+
+const imageObject = images[image]();
+
 ---
 
 <div class="flex gap-10 flex-col group itens-center justify-center text-center">
@@ -12,27 +25,20 @@ import GoldenPhoto from "../assets/golden.jpg";
             class="absolute z-20 rounded-full bg-primary-400 -rotate-6 w-full h-3/4 -bottom-6 -right-6 transition-all duration-500 group-hover:-bottom-4 group-hover:-right-4 group-hover:bg-accent"
         >
         </div>
-        <img
-            class="w-full aspect-3/4 object-cover rounded-[10px] z-40 relative"
-            src={GoldenPhoto.src}
-            alt="Golden Retriever"
-        />
+
+        <Image src={imageObject} class="w-full aspect-3/4 object-cover rounded-[10px] z-30 relative" alt={title} />
     </div>
 
     <h3
         class="text-2xl font-heading font-semibold text-accent dark:text-accent-300 relative"
     >
-        Konsultacje behawioralne
+        {title}
     </h3>
     <p class="text-accent-100 dark:text-accent-100">
-        Oferuję indywidualne konsultacje dla psów i ich opiekunów, oparte na
-        wnikliwej ocenie zachowania, nastroju, potrzeb oraz naturalnych
-        predyspozycji psa. Pomagam w zrozumieniu trudnych zachowań i prowadzę
-        skuteczną terapię zaburzeń, dostosowaną do konkretnego przypadku i
-        możliwości zwierzęcia.
+        <slot />
     </p>
 
     <a href="mailto:zawadzkaglinka@gmail.com" class="transition-all duration-500 text-base text-accent decoration-1 hover:text-accent-200 underline focus:underline font-medium dark:text-accent-300 underline-offset-8 group-hover:text-accent-200">
-        Tutaj spersonaizowany tekst w linku
+        {link}
     </a>
 </div>

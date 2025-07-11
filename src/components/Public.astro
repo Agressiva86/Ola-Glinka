@@ -1,5 +1,7 @@
 ---
 import BookPhoto from "../assets/book.jpg";
+
+import { Image } from 'astro:assets';
 ---
 
 <!-- Card Blog -->
@@ -24,10 +26,11 @@ import BookPhoto from "../assets/book.jpg";
             <div
                 class="relative pt-[50%] sm:pt-[70%] rounded-[10px] overflow-hidden"
             >
-                <img
+                <Image
                     class="size-full absolute top-0 start-0 object-cover group-hover:scale-105 group-focus:scale-105 transition-transform duration-500 ease-in-out rounded-[10px]"
                     src="https://images.unsplash.com/photo-1632498301446-5f78baad40d0?q=80&w=800&h=800&auto=format&fit=crop"
                     alt="Blog Image"
+                    inferSize={true}
                 />
                 <span
                     class="absolute top-0 end-0 rounded-se-xl rounded-es-xl text-xs font-medium bg-primary text-accent-300 py-2 px-4 dark:bg-neutral-900"
@@ -59,10 +62,11 @@ import BookPhoto from "../assets/book.jpg";
             <div
                 class="relative pt-[50%] sm:pt-[70%] rounded-[10px] overflow-hidden"
             >
-                <img
+                <Image
                     class="size-full absolute top-0 start-0 object-cover group-hover:scale-105 group-focus:scale-105 transition-transform duration-500 ease-in-out rounded-[10px]"
                     src="https://images.unsplash.com/photo-1632498301446-5f78baad40d0?q=80&w=800&h=800&auto=format&fit=crop"
                     alt="Blog Image"
+                    inferSize={true}
                 />
                 <span
                     class="absolute top-0 end-0 rounded-se-xl rounded-es-xl text-xs font-medium bg-primary text-accent-300 py-2 px-4 dark:bg-neutral-900"
@@ -100,9 +104,9 @@ import BookPhoto from "../assets/book.jpg";
                     Książka
                 </span>
 
-            <img
+            <Image
                 class="w-full absolute top-0 left-0 h-full -z-10 object-cover rounded-[10px]"
-                src={BookPhoto.src}
+                src={BookPhoto}
                 alt="Aleksanda Zawadzka-Glinka Behawiorystka Zwierząt Towarzyszących"
             />
 

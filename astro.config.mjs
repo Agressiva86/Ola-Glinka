@@ -10,4 +10,7 @@ export default defineConfig({
   },
 
   integrations: [icon()],
+  image: {
+    domains: ["images.unsplash.com"],
+  }
 });

@@ -1,5 +1,6 @@
 ---
 import HelpCard from "../components/HelpCard.astro";
+
 ---
 
 <section class="bg-primary py-20 mt-20 dark:bg-dark-600/30" id="offer">
@@ -30,9 +31,28 @@ import HelpCard from "../components/HelpCard.astro";
         <!-- Grid -->
         <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 lg:gap-12 gap-y-10">
 
-            <HelpCard />
-            <HelpCard />
-            <HelpCard />
+            <HelpCard
+                title="Konsultacje behawioralne"
+                link="Link do konsultacji"
+                image="/src/assets/golden.jpg"
+            >
+                Jakiś opis dotyczący konsultacji behawioralnych, który pomoże
+            </HelpCard>
+            <HelpCard
+                title="Szkolenia indywidualne"
+                link="Link do szkoleń indywidualnych"
+                image="/src/assets/book.jpg"
+
+            >
+                Jakiś opis dotyczący szkoleń indywidualnych, który pomoże
+            </HelpCard>
+            <HelpCard
+                title="Szkolenia grupowe"
+                link="Link do szkoleń grupowych"
+                image="/src/assets/profil.jpeg"
+            >
+                Jakiś opis dotyczący szkoleń grupowych, który pomoże
+            </HelpCard>
 
         </div>
         <!-- End Grid -->

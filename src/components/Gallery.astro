@@ -1,6 +1,9 @@
 ---
 import Client1 from "../assets/clients/1.jpg";
 import Client2 from "../assets/clients/2.jpg";
+
+import { Image } from 'astro:assets';
+
 ---
 
     <!-- Grid -->
@@ -21,60 +24,60 @@ import Client2 from "../assets/clients/2.jpg";
 
     <div class="grid grid-cols-2 sm:grid-cols-4 gap-8">
         <div class="space-y-8">
-            <img
+            <Image
                 class="w-full h-auto object-cover rounded-[10px]"
-                src={Client1.src}
+                src={Client1}
                 alt="New ALT Here"
             />
-            <img
+            <Image
                 class="w-full h-auto object-cover rounded-[10px]"
-                src={Client2.src}
+                src={Client2}
                 alt="New ALT Here"
             />
-            <img
+            <Image
                 class="w-full h-auto object-cover rounded-[10px]"
-                src={Client1.src}
-                alt="New ALT Here"
-            />
-        </div>
-        <div class="space-y-8">
-            <img
-                class="w-full h-auto object-cover rounded-[10px]"
-                src={Client2.src}
-                alt="New ALT Here"
-            />
-            <img
-                class="w-full h-auto object-cover rounded-[10px]"
-                src={Client1.src}
+                src={Client1}
                 alt="New ALT Here"
             />
         </div>
         <div class="space-y-8">
-            <img
+            <Image
                 class="w-full h-auto object-cover rounded-[10px]"
-                src={Client1.src}
+                src={Client2}
                 alt="New ALT Here"
             />
-            <img
+            <Image
                 class="w-full h-auto object-cover rounded-[10px]"
-                src={Client2.src}
+                src={Client1}
                 alt="New ALT Here"
             />
-            <img
+        </div>
+        <div class="space-y-8">
+            <Image
                 class="w-full h-auto object-cover rounded-[10px]"
-                src={Client1.src}
+                src={Client1}
+                alt="New ALT Here"
+            />
+            <Image
+                class="w-full h-auto object-cover rounded-[10px]"
+                src={Client2}
+                alt="New ALT Here"
+            />
+            <Image
+                class="w-full h-auto object-cover rounded-[10px]"
+                src={Client1}
                 alt="New ALT Here"
             />
         </div>
         <div class="space-y-2">
-            <img
+            <Image
                 class="w-full h-auto object-cover rounded-[10px]"
-                src={Client2.src}
+                src={Client2}
                 alt="New ALT Here"
             />
-            <img
+            <Image
                 class="w-full h-auto object-cover rounded-[10px]"
-                src={Client1.src}
+                src={Client1}
                 alt="New ALT Here"
             />
         </div>

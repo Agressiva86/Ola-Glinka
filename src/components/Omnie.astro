@@ -1,6 +1,7 @@
 ---
 import Profil from "../assets/profil.jpeg";
 import OmnieBox from "../components/OmnieBox.astro";
+import { Image } from 'astro:assets';
 ---
 
 <!-- Grid -->
@@ -17,10 +18,12 @@ import OmnieBox from "../components/OmnieBox.astro";
                 class="absolute z-20 rounded-full bg-primary-400 -rotate-6 w-1/2 h-full top-6 left-6"
             >
             </div>
-            <img
+            <Image
                 class="w-full aspect-4/3 object-cover rounded-[10px] z-40 relative"
-                src={Profil.src}
+                src={Profil}
                 alt="Aleksanda Zawadzka-Glinka Behawiorystka Zwierząt Towarzyszących"
+                inferSize={true}
+                loading="eager"
             />
         </div>
     </div>
@@ -111,9 +114,9 @@ import OmnieBox from "../components/OmnieBox.astro";
             class="absolute z-20 rounded-full bg-primary-400 -rotate-6 w-1/2 h-full top-6 left-6"
         >
         </div>
-        <img
+        <Image
             class="w-full aspect-4/3 object-cover rounded-[10px] z-40 relative"
-            src={Profil.src}
+            src={Profil}
             alt="Aleksanda Zawadzka-Glinka Behawiorystka Zwierząt Towarzyszących"
         />
     </div>
