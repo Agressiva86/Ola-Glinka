@@ -151,9 +151,16 @@ import { Icon } from "astro-icon/components";
 <script type="text/javascript">
     function darkModeListener() {
         document.querySelector("html").classList.toggle("dark");
+        document
+        .querySelectorAll("input[type='checkbox']#dark-toggle")
+        .forEach((checkbox) => {
+            checkbox.checked = !checkbox.checked;
+        });
     }
 
     document
-        .querySelector("input[type='checkbox']#dark-toggle")
-        .addEventListener("click", darkModeListener);
+        .querySelectorAll("input[type='checkbox']#dark-toggle")
+        .forEach((checkbox) => {
+            checkbox.addEventListener("click", darkModeListener);
+        });
 </script>
