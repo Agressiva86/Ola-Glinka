@@ -1,5 +1,6 @@
 ---
-import Profil from "../assets/profil.jpeg";
+import Profil from "../assets/jestem_olka.jpg";
+import Prywatnie from "../assets/olka_prywatnie.jpg";
 import OmnieBox from "../components/OmnieBox.astro";
 import { Image } from 'astro:assets';
 ---
@@ -19,12 +20,13 @@ import { Image } from 'astro:assets';
             >
             </div>
             <Image
-                class="w-full aspect-4/3 object-cover rounded-[10px] z-40 relative"
+                class="w-full aspect-1/1 object-cover rounded-[10px] z-40 relative"
                 src={Profil}
                 alt="Aleksanda Zawadzka-Glinka Behawiorystka Zwierząt Towarzyszących"
                 inferSize={true}
                 loading="eager"
             />
+            <span class="absolute bottom-2 right-2 text-xs text-accent-400 z-50">Photo by FurFocus</span>
         </div>
     </div>
 
@@ -115,10 +117,11 @@ import { Image } from 'astro:assets';
         >
         </div>
         <Image
-            class="w-full aspect-4/3 object-cover rounded-[10px] z-40 relative"
-            src={Profil}
+            class="w-full aspect-1/1 object-cover rounded-[10px] z-40 relative"
+            src={Prywatnie}
             alt="Aleksanda Zawadzka-Glinka Behawiorystka Zwierząt Towarzyszących"
         />
+        <span class="absolute bottom-2 right-2 text-xs text-accent-400 z-50">Photo by FurFocus</span>
     </div>
 </div>
 <!-- End Grid -->

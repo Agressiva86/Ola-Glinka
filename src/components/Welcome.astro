@@ -1,5 +1,6 @@
 ---
 import { Image } from 'astro:assets';
+import Ola from "../assets/olaglinka.jpg";
 ---
 <!-- Grid -->
 <div class="grid md:grid-cols-2 gap-10 xl:gap-20 md:items-center">
@@ -50,9 +51,10 @@ import { Image } from 'astro:assets';
 		<div class="absolute -z-10 rounded-full bg-accent rotate-1 w-full h-full -top-6 -right-6"></div>
 		<div class="absolute -z-20 rounded-full bg-primary-400 -rotate-6 w-full h-full top-6 right-6"></div>
 		<Image
-			class="w-full aspect-4/3 object-cover rounded-[10px] z-40 relative"
-			src="https://images.unsplash.com/photo-1632498301446-5f78baad40d0?q=80&w=800&h=800&auto=format&fit=crop"
-			alt="Hero Image"
+			class="w-full aspect-1/1 object-cover rounded-[10px] z-40 relative"
+			src={Ola}
+			loading="eager"
+			alt="Aleksanda Zawadzka-Glinka Behawiorystka Zwierząt Towarzyszących i Igloo"
 			inferSize={true}
 		/>
 	</div>

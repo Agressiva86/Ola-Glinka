@@ -1,0 +1,52 @@
+---
+import Komunikacja from "../assets/komunikacja.jpg";
+import { Image } from 'astro:assets';
+---
+
+<!-- Grid -->
+<div id=""
+    class="container grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-x-12 items-center"
+>
+    <div>
+        <div class="relative">
+            <div
+                class="absolute z-10 rounded-full bg-accent rotate-4 w-1/2 h-1/2 -top-6 -right-6"
+            >
+            </div>
+            <div
+                class="absolute z-20 rounded-full bg-primary-400 -rotate-6 w-1/2 h-full top-6 left-6"
+            >
+            </div>
+            <Image
+                class="w-full aspect-1/1 object-cover rounded-[10px] z-40 relative"
+                src={Komunikacja}
+                alt="Aleksanda Zawadzka-Glinka Behawiorystka Zwierząt Towarzyszących"
+                inferSize={true}
+                loading="eager"
+            />
+            <span class="absolute bottom-2 right-2 text-xs text-accent-400 z-50">Photo by FurFocus</span>
+        </div>
+    </div>
+
+    <div class="grid grid-cols-1 gap-10 lg:gap-x-12">
+        <h2
+            class="text-xl font-heading font-bold text-primary-600 lg:text-4xl lg:leading-tight dark:text-white"
+        >
+            Cześć, jestem Olka.
+        </h2>
+
+        <p class="text-base text-primary dark:text-accent-100">
+            Rozwój technologii, cywilizacji i pogoń za pracą sprawia, że ludzie zmuszeni są do życia w ciągłym biegu... Brak czasu na podstawowe przyjemności i na zasłużoną dawkę relaksu może czynić ludzi mniej uważnymi na sygnały wysyłane przez najserdeczniejszych przyjaciół, jakimi są psy.
+        </p>
+
+        <p class="text-base text-primary dark:text-accent-100">
+            Psy, którym przyszło żyć w zagęszczonym ludzkim świecie. Znaczne ograniczenie przestrzeni, nadmiar lub niedobór bodźców, traumatyczne przeżycia, czy niemiłe doświadczenia z przeszłości mogą odpowiadać za to, że pies prezentuje problemowe zachowania z którymi boryka się wraz ze swoim opiekunem.
+        </p>
+
+        <p class="text-base text-primary dark:text-accent-100">
+            Psy mówią o swoich problemach. Mówią nie używając głosu. Ich ciało jest jak otwarta księga, którą można czytać godzinami. I do tej lektury z całego serca zapraszam Ciebie i Twojego psa.<br>
+            Podczas warsztatu porozmawiamy i zajmiemy się problemami, które psy stwarzają opiekunom. Wspólnie stawimy im czoła, pamiętając o tym, że nie zawsze problem widziany oczyma człowieka, jest problemem z punktu widzenia psa. Przez dwa dni pracy praktycznej będziemy zmieniać na lepsze Wasze relacje słuchając tego, co mówią do nas psy. Komunikując się ze sobą możemy więcej! A gdy po drugiej stronie smyczy stoi najlepszy przyjaciel, to wspólnie z nim jesteśmy w stanie przenieść góry. Razem - ja, Ty i Twój pies! Zapraszam serdecznie!
+        </p>
+    </div>
+</div>
+<!-- End Grid -->
