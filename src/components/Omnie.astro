@@ -1,34 +1,16 @@
 ---
 import Profil from "../assets/jestem_olka.jpg";
 import Prywatnie from "../assets/olka_prywatnie.jpg";
-import OmnieBox from "../components/OmnieBox.astro";
+import Pies1 from "../assets/pies1.jpg";
+import Pies2 from "../assets/pies2.jpg";
+
 import { Image } from 'astro:assets';
 ---
 
 <!-- Grid -->
 <div id="poznaj-mnie"
-    class="container grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-x-12 items-center"
+    class="container grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-x-12 items-end"
 >
-    <div>
-        <div class="relative">
-            <div
-                class="absolute z-10 rounded-full bg-accent rotate-4 w-1/2 h-1/2 -top-6 -right-6"
-            >
-            </div>
-            <div
-                class="absolute z-20 rounded-full bg-primary-400 -rotate-6 w-1/2 h-full top-6 left-6"
-            >
-            </div>
-            <Image
-                class="w-full aspect-1/1 object-cover rounded-[10px] z-40 relative"
-                src={Profil}
-                alt="Aleksanda Zawadzka-Glinka Behawiorystka Zwierząt Towarzyszących"
-                inferSize={true}
-                loading="eager"
-            />
-            <span class="absolute bottom-2 right-2 text-xs text-accent-400 z-50">Photo by FurFocus</span>
-        </div>
-    </div>
 
     <div class="grid grid-cols-1 gap-10 lg:gap-x-12">
         <h2
@@ -66,15 +48,7 @@ import { Image } from 'astro:assets';
             mieć miejsca i powinna być zawsze jednoznacznie potępiana.
         </p>
     </div>
-</div>
-<!-- End Grid -->
 
-<OmnieBox />
-
-<!-- Grid -->
-<div
-    class="mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-x-12 items-center"
->
     <div class="grid grid-cols-1 gap-6">
         <p class="text-base text-primary dark:text-accent-100">
             Prywatnie jestem szczęśliwą i uśmiechniętą opiekunką siedmiu
@@ -106,22 +80,52 @@ import { Image } from 'astro:assets';
             żartować. Śmiech jest dużą częścią mnie.
         </p>
     </div>
+</div>
+<!-- End Grid -->
+
+<!-- Grid -->
+<div
+    class="mx-auto grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-x-12 items-center"
+>
+    <div>
+        <div class="relative">
+            <div
+                class="absolute z-20 rounded-full bg-accent -rotate-6 w-3/4 h-full -top-6 left-6"
+            >
+            </div>
+            <Image
+                class="w-full aspect-1/1 object-cover rounded-[10px] z-40 relative"
+                src={Profil}
+                alt="Aleksanda Zawadzka-Glinka Behawiorystka Zwierząt Towarzyszących"
+                inferSize={true}
+                loading="eager"
+            />
+            <span class="absolute bottom-2 right-2 text-xs text-accent-400 z-50">Photo by FurFocus</span>
+        </div>
+    </div>
 
     <div class="relative">
         <div
-            class="absolute z-10 rounded-full bg-accent rotate-4 w-1/2 h-1/2 -top-6 -right-6"
-        >
-        </div>
-        <div
-            class="absolute z-20 rounded-full bg-primary-400 -rotate-6 w-1/2 h-full top-6 left-6"
+            class="absolute z-20 rounded-full bg-primary-400 -rotate-6 w-3/4 h-full top-6 left-6"
         >
         </div>
         <Image
             class="w-full aspect-1/1 object-cover rounded-[10px] z-40 relative"
-            src={Prywatnie}
+            src={Pies1}
             alt="Aleksanda Zawadzka-Glinka Behawiorystka Zwierząt Towarzyszących"
         />
-        <span class="absolute bottom-2 right-2 text-xs text-accent-400 z-50">Photo by FurFocus</span>
+    </div>
+
+    <div class="relative">
+        <div
+            class="absolute z-10 rounded-full bg-accent rotate-4 w-3/4 h-1/2 -top-6 -right-6"
+        >
+        </div>
+        <Image
+            class="w-full aspect-1/1 object-cover rounded-[10px] z-40 relative"
+            src={Pies2}
+            alt="Aleksanda Zawadzka-Glinka Behawiorystka Zwierząt Towarzyszących"
+        />
     </div>
 </div>
 <!-- End Grid -->
