@@ -26,16 +26,16 @@ import { Image } from 'astro:assets';
         <!-- Card -->
         <a class="group flex flex-col focus:outline-hidden" href="https://drogerienatura.pl/magazyn" target="_blank">
             <div
-                class="relative pt-[50%] sm:pt-[70%] rounded-[10px] overflow-hidden"
+                class="relative pt-[50%] sm:pt-[70%] rounded-r-full overflow-hidden"
             >
                 <Image
-                    class="size-full absolute top-0 start-0 object-cover group-hover:scale-105 group-focus:scale-105 transition-transform duration-500 ease-in-out rounded-[10px]"
+                    class="size-full absolute top-0 start-0 object-cover group-hover:scale-105 group-focus:scale-105 transition-transform duration-500 ease-in-out"
                     src={Magazyn}
                     alt="Magazyn Natura"
                     inferSize={true}
                 />
                 <span
-                    class="absolute top-0 end-0 rounded-se-xl rounded-es-xl text-xs font-medium bg-primary text-accent-300 py-2 px-4 dark:bg-neutral-900"
+                    class="absolute top-0 left-0 text-xs font-medium bg-primary text-accent-300 py-2 px-4 dark:bg-neutral-900"
                 >
                     Publikacje
                 </span>
@@ -62,7 +62,7 @@ import { Image } from 'astro:assets';
         <!-- Card -->
         <a class="group flex flex-col focus:outline-hidden" href="https://www.youtube.com/watch?v=B_J19Kegss4" target="_blank">
             <div
-                class="relative pt-[50%] sm:pt-[70%] rounded-[10px] overflow-hidden"
+                class="relative pt-[50%] sm:pt-[70%] rounded-l-full overflow-hidden"
             >
                 <Image
                     class="size-full absolute top-0 start-0 object-cover group-hover:scale-105 group-focus:scale-105 transition-transform duration-500 ease-in-out rounded-[10px]"
@@ -71,7 +71,7 @@ import { Image } from 'astro:assets';
                     inferSize={true}
                 />
                 <span
-                    class="absolute top-0 end-0 rounded-se-xl rounded-es-xl text-xs font-medium bg-primary text-accent-300 py-2 px-4 dark:bg-neutral-900"
+                    class="absolute top-0 end-0 text-xs font-medium bg-primary text-accent-300 py-2 px-4 dark:bg-neutral-900"
                 >
                     Rozmowa
                 </span>
@@ -101,13 +101,13 @@ import { Image } from 'astro:assets';
             href="https://lubimyczytac.pl/ksiazka/5034043/zamieszka-l-ze-mna-kot" target="_blank"
         >
         <span
-                    class="absolute top-0 end-0 rounded-se-xl rounded-es-xl text-xs font-medium bg-primary text-accent-300 py-2 px-4 dark:bg-neutral-900"
+                    class="absolute top-0 end-0 text-xs font-medium bg-primary text-accent-300 py-2 px-4 dark:bg-neutral-900"
                 >
                     Książka
                 </span>
 
             <Image
-                class="w-full absolute top-0 left-0 h-full -z-10 object-cover rounded-[10px]"
+                class="w-full absolute top-0 left-0 h-full -z-10 object-cover rounded-b-full"
                 src={BookPhoto}
                 alt="Aleksanda Zawadzka-Glinka Behawiorystka Zwierząt Towarzyszących"
             />
@@ -123,12 +123,24 @@ import { Image } from 'astro:assets';
                     Wydawnictwo: EMG
                 </p>
             </div>
-            <div class="pt-0 p-4 md:p-6 relative z-10">
+            <div class="pt-0 relative z-10">
                 <div
-                    class="inline-flex items-center gap-2 text-base font-bold font-medium text-white group-hover:text-white/70 group-focus:text-white/70"
-                >
-                    Kup książkę!
-                </div>
+				class="py-5 px-7 inline-flex justify-center items-center gap-x-2 text-base font-medium rounded-[30px] border border-transparent bg-secondary-600 text-white hover:bg-dark focus:outline-hidden focus:bg-secondary-700 disabled:opacity-50 disabled:pointer-events-none transition-all duration-300"
+			>
+				Kup książkę!
+				<svg
+					class="shrink-0 size-4"
+					xmlns="http://www.w3.org/2000/svg"
+					width="24"
+					height="24"
+					viewBox="0 0 24 24"
+					fill="none"
+					stroke="currentColor"
+					stroke-width="2"
+					stroke-linecap="round"
+					stroke-linejoin="round"><path d="m9 18 6-6-6-6"></path></svg
+				>
+			</div>
             </div>
         </a>
         <!-- End Card -->
