@@ -1,7 +1,7 @@
 ---
-import Komunikacja from "../assets/komunikacja.jpg";
 import Spacery from "../assets/spacery.jpg";
-import Wyjazdy from "../assets/wyjazdy.jpg";
+import Spacer1 from "../assets/spacer.jpg";
+import Spacer2 from "../assets/spacer2.jpg";
 import { Image } from "astro:assets";
 ---
 
@@ -26,7 +26,26 @@ import { Image } from "astro:assets";
 
                     <Image
                         class="w-full aspect-3/4 object-cover rounded-t-full z-40 relative"
-                        src={Spacery}
+                        src={Spacer1}
+                        alt="Aleksanda Zawadzka-Glinka Behawiorystka Zwierząt Towarzyszących"
+                        inferSize={true}
+                        loading="eager"
+                    />
+                </div>
+
+                <div class="relative lg:w-3/4 origin-top-center mx-auto">
+                    <div
+                        class="absolute z-20 rounded-t-full bg-orange-500 opacity-60 w-[160px] h-[200px] -top-6 -right-6 rotate-180"
+                    >
+                    </div>
+                    <div
+                        class="absolute z-10 rounded-t-full bg-orange-500 opacity-40 w-[200px] h-[260px] bottom-0 left-0"
+                    >
+                    </div>
+
+                    <Image
+                        class="w-full aspect-3/4 object-cover rounded-b-full z-40 relative"
+                        src={Spacer2}
                         alt="Aleksanda Zawadzka-Glinka Behawiorystka Zwierząt Towarzyszących"
                         inferSize={true}
                         loading="eager"
