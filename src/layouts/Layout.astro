@@ -1,6 +1,7 @@
 ---
 import "../styles/global.css";
 ---
+
 <!doctype html>
 <html lang="pl" class="scroll-smooth">
 	<head>
@@ -9,12 +10,38 @@ import "../styles/global.css";
 
 		<meta name="robots" content="noindex,nofollow" />
 
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Terapia behawioralna dla psa - Aleksandra Zawadzka-Glinka. Behawiorystka psów i zwierząt towarzyszących. </title>
-		<meta name="description" content="Zrozum swojego psa. Zbuduj z nim prawdziwą relację. Terapia behawioralna dla psa. Pomoc w problemach behawioralnych psów." />
+		<title>
+			Terapia behawioralna dla psa - Aleksandra Zawadzka-Glinka.
+			Behawiorystka psów i zwierząt towarzyszących.
+		</title>
+		<meta
+			name="description"
+			content="Zrozum swojego psa. Zbuduj z nim prawdziwą relację. Terapia behawioralna dla psa. Pomoc w problemach behawioralnych psów."
+		/>
+
+		<link
+			rel="icon"
+			type="image/png"
+			href="/favicon-96x96.png"
+			sizes="96x96"
+		/>
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="/apple-touch-icon.png"
+		/>
+		<meta
+			name="apple-mobile-web-app-title"
+			content="Aleksandra Zawadzka - Glinka"
+		/>
+		<link rel="manifest" href="/site.webmanifest" />
 	</head>
-	<body class="font-content text-primary bg-lightbg dark:bg-dark transition-all duration-300 overflow-x-hidden">
+	<body
+		class="font-content text-primary bg-lightbg dark:bg-dark transition-all duration-300 overflow-x-hidden"
+	>
 		<slot />
 	</body>
 </html>
