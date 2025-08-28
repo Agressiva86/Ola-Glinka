@@ -1,0 +1,135 @@
+---
+import Komunikacja from "../assets/komunikacja.jpg";
+import Spacery from "../assets/spacery.jpg";
+import Wyjazdy from "../assets/wyjazdy.jpg";
+import { Image } from "astro:assets";
+---
+
+<section class="bg-orange-700 py-20 dark:bg-dark-600/30">
+    <!-- Features -->
+    <div
+        class="container max-w-[1550px] mx-auto px-10 mx-auto grid grid-cols-1 gap-20"
+    >
+        <div
+            class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-x-12 items-start"
+        >
+            <div>
+                <div class="relative lg:w-3/4 origin-top-center mx-auto mb-20">
+                    <div
+                        class="absolute z-20 rounded-t-full bg-orange-500 opacity-60 w-[160px] h-[200px] top-0 right-0 rotate-180"
+                    >
+                    </div>
+                    <div
+                        class="absolute z-10 rounded-t-full bg-orange-500 opacity-40 w-[200px] h-[260px] -bottom-6 -left-6"
+                    >
+                    </div>
+
+                    <Image
+                        class="w-full aspect-3/4 object-cover rounded-t-full z-40 relative"
+                        src={Spacery}
+                        alt="Aleksanda Zawadzka-Glinka Behawiorystka Zwierząt Towarzyszących"
+                        inferSize={true}
+                        loading="eager"
+                    />
+                </div>
+            </div>
+            <div class="flex gap-10 flex-col">
+                <h3
+                    class="text-4xl font-heading font-semibold text-orange-100 dark:text-accent-300 relative"
+                >
+                    Spacery socjalizacyjne
+                </h3>
+                <p class="text-white/90 dark:text-accent-100">
+                    Ogólnopolska moda, czy czas spędzony z psem, który może
+                    przynieść wiele korzyści? Spacery socjalizacyjne stały się
+                    ostatnimi czasy, dość popularne. Ofert więcej niż klientów.
+                    Dobrze poprowadzony spacer socjalizacyjny może przynieść
+                    mają liczne korzyści. Źle poprowadzony, może doprowadzić do
+                    poglebiania psich problemów. Sztuką tworzenia grupy
+                    spacerowej jest przede wszystkim odpowiedni dobór osobników.
+                    Psy dopasowane osobowością, charakterem oraz temperamentem.
+                    Aby spacer był owocny, cała grupa spacerowa powinna czuć się
+                    bezpiecznie. Nie tylko psy, opiekunowie również. Ważnym
+                    czynnikiem jest też dobór miejsca spaceru dla poszczególnych
+                    psów. Nie każdy jest gotowy chodzić po mieście, podobnie,
+                    jak nie każdy pies będzie umiał skupić się w lesie. To
+                    wszytko trzeba połączyć w odpowiednią, szczegółowo
+                    dopracowaną całość.
+                </p>
+
+                <p
+                    class="font-heading text-lg font-semibold text-white/90 dark:text-accent-100"
+                >
+                    Korzyści dla psa płynące z uczestnictwa w dobrze
+                    poprowadzonym spacerze socjalizacyjnym:
+                </p>
+
+                <ul
+                    class="list-disc list-inside flex flex-col gap-4 text-white/90 dark:text-accent-100"
+                >
+                    <li>budowanie pewności siebie u psa,</li>
+                    <li>
+                        poprawa umiejętności wyrażania siebie w obecności innych
+                        psów,
+                    </li>
+                    <li>umiejętność unikania konfliktów,</li>
+                    <li>
+                        umiejętność odmawiania innemu psu bez użycia zachowania
+                        agresywnego,
+                    </li>
+                    <li>radzenie sobie z odnową wyrażoną przez innego psa,</li>
+                    <li>możliwość eksploracji nowych, nieznanych terenów,</li>
+                    <li>
+                        oswajanie bez zbędnego sresu bodźców uważanych wcześniej
+                        za problemowe,
+                    </li>
+                    <li>możliwość znalezienia prawdziwych psich przyjaciół.</li>
+                </ul>
+
+                <p
+                    class="font-heading text-lg font-semibold text-white/90 dark:text-accent-100"
+                >
+                    Korzyści dla opiekunów:
+                </p>
+
+                <ul
+                    class="list-disc list-inside flex flex-col gap-4 text-white/90 dark:text-accent-100"
+                >
+                    <li>budowanie pewności siebie,</li>
+                    <li>umiejętność czytania sygnałów wysyłanych przez psy,</li>
+                    <li>zrozumienie potrzeb psa,</li>
+                    <li>umiejętność zarządzania smyczą,</li>
+                    <li>
+                        umiejętność wyprowadzenia psa z trudnej dla niego
+                        sytuacji,
+                    </li>
+                    <li>wymiana doświadczeń z innymi opiekunami psów,</li>
+                    <li>mile spędzony czas w dobrym towarzystwie.</li>
+                </ul>
+
+                <p class="text-white/90 dark:text-accent-100">
+                    Dodatkowo - umiejętność korzystania z Mapy Google. Kto ze
+                    mną spaceruje, ten wie, jak często się gubię. Prowadząc
+                    spacer socjalizacyjny, jestem w stu procentach skupiona na
+                    tym, co pokazują mi psy. Jestem tam dla nich i dla ich
+                    opiekunów, nie zawsze zwracam uwagę, gdzie trzeba skręcić...
+                    W następstwie tego, wszyscy razem szukamy drogi powrotnej.
+                </p>
+                <p class="text-white/90 dark:text-accent-100">
+                    Grupa spacerowa liczy sobie od 4 - 6 psów. Wszystko zależy z
+                    kim idziemy i gdzie idziemy. Ważne, aby każdy spacer był
+                    wspaniałą przygodą dla psów i ich opiekunów. Zapraszam
+                    serdecznie na spacery socjalizacyjne w Łodzi i nie tylko.
+                </p>
+
+                <a
+                    href="mailto:zawadzkaglinka@gmail.com"
+                    class="transition-all duration-500 text-base text-orange-100 decoration-1 hover:text-accent-200 underline focus:underline font-medium dark:text-accent-300 underline-offset-8 group-hover:text-accent-200"
+                >
+                    Weź udział w spacerach
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- End Features -->
+</section>

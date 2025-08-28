@@ -2,6 +2,10 @@
 import Friend1 from "../assets/clients/furfocus.png";
 import Friend2 from "../assets/clients/HDYF.png";
 import Friend3 from "../assets/clients/dogoowo.png";
+import Friend4 from "../assets/clients/mokre-lapy.png";
+import Friend5 from "../assets/clients/pieskolandia.png";
+import Friend6 from "../assets/clients/coape.png";
+import Friend7 from "../assets/clients/alteri.png";
 
 import { Image } from "astro:assets";
 ---
@@ -16,28 +20,58 @@ import { Image } from "astro:assets";
   </div>
   <!-- End Title -->
 
-  <div
-    class="flex flex-wrap justify-center gap-x-6 sm:gap-x-12 lg:gap-x-24"
-  >
-    <div class="flex items-center justify-center">
+  <div class="flex flex-wrap justify-center gap-x-4">
+    <a
+      href="https://coape.pl/" target="_blank"
+      class="flex items-center justify-center p-6 dark:bg-accent-100 rounded-[7px]"
+    >
+      <Image
+        class="max-h-[45px] w-auto"
+        src={Friend6}
+        alt="Coape"
+        inferSize={true}
+      />
+    </a>
+
+    <a
+      href="https://www.facebook.com/sdpAlteri/" target="_blank"
+      class="flex items-center justify-center p-6 dark:bg-accent-100 rounded-[7px]"
+    >
+      <Image
+        class="max-h-[100px] w-auto"
+        src={Friend7}
+        alt="Alteri"
+        inferSize={true}
+      />
+    </a>
+
+    <a href="https://www.facebook.com/FurFocusPortretyZwierzat" target="_blank"
+      class="flex items-center justify-center p-6 dark:bg-accent-100 rounded-[7px]"
+    >
       <Image
         class="max-h-[100px] w-auto"
         src={Friend1}
         alt="Fur Focus - Portrety Zwierząt"
         inferSize={true}
       />
+    </a>
+
+    <div
+      class="flex items-center justify-center p-6 dark:bg-accent-100 rounded-[7px]"
+    >
+      <a href="https://haudoyoufeel.pl/" target="_blank"
+        ><Image
+          class="max-h-[100px] w-auto"
+          src={Friend2}
+          alt="Fur Focus - Portrety Zwierząt"
+          inferSize={true}
+        /></a
+      >
     </div>
 
-    <div class="flex items-center justify-center">
-      <a href="https://haudoyoufeel.pl/" target="_blank"><Image
-        class="max-h-[100px] w-auto"
-        src={Friend2}
-        alt="Fur Focus - Portrety Zwierząt"
-        inferSize={true}
-      /></a>
-    </div>
-
-    <div class="flex items-center justify-center">
+    <div
+      class="flex items-center justify-center p-6 dark:bg-accent-100 rounded-[7px]"
+    >
       <Image
         class="max-h-[100px] w-auto"
         src={Friend3}
@@ -45,6 +79,30 @@ import { Image } from "astro:assets";
         inferSize={true}
       />
     </div>
+
+    <a href="https://mokrelapy.pl/" target="_blank"
+      class="flex items-center justify-center p-6 dark:bg-accent-100 rounded-[7px]"
+    >
+      <Image
+        class="max-h-[100px] w-auto"
+        src={Friend4}
+        alt="Mokre Łapy"
+        inferSize={true}
+      />
+    </a>
+
+    <a
+      href="https://pieskolandia.pl/"
+      target="_blank"
+      class="flex items-center justify-center p-6 dark:bg-accent-100 rounded-[7px]"
+    >
+      <Image
+        class="max-h-[45px] w-auto"
+        src={Friend5}
+        alt="Pieskolandia"
+        inferSize={true}
+      />
+    </a>
   </div>
 </div>
 <!-- End Clients -->
