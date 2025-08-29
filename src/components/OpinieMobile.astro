@@ -1,134 +1,57 @@
 ---
-import OpinieCard from "../components/OpinieCard.astro";
+import OpinieCardMobile from "../components/OpinieCardMobile.astro";
+import OpinieCard from "../components/OpinieCardMobile.astro";
 ---
 
-<div
-    class="lg:grid lg:grid-cols-12 lg:gap-16 lg:items-center lg:justify-between"
->
-    <div class="lg:col-span-5 lg:col-start-1">
-        <!-- Title -->
-        <div class="my-10">
-            <h3
-                class="block text-xl font-heading font-bold text-secondary sm:text-xl lg:text-3xl lg:leading-tight dark:text-accent"
-            >
-                Dlaczego warto zaufać mojemu doświadczeniu?
-            </h3>
-            <p class="mt-5 text-base text-primary dark:text-accent-100">
-                Moja wiedza to nie tylko teoria, ale przede wszystkim praktyka
-                oparta na realnych sukcesach i empatii wobec zwierząt i ich
-                ludzi.
-            </p>
-        </div>
-        <!-- End Title -->
-    </div>
-    <!-- End Col -->
+<!-- Opinions Section for mobile -->
+ <div class="lg:hidden flex overflow-x-auto space-x-8 pb-5 overflow-x-scroll px-10 mb-20">
 
-    <div class="mt-10 lg:mt-0 lg:col-span-6 lg:col-end-13">
-        <div class="space-y-6 sm:space-y-8">
-            <!-- List -->
-            <ul
-                class="grid grid-cols-1 md:grid-cols-2 divide-y divide-y-2 divide-x divide-x-2 divide-accent overflow-hidden dark:divide-neutral-700"
-            >
-                <li class="flex flex-col -m-0.5 p-4 sm:p-8">
-                    <div
-                        class="font-heading text-3xl sm:text-5xl font-semibold text-primary mb-2 dark:text-accent-200"
-                    >
-                        1800+
-                    </div>
-                    <p class="text-primary-400 dark:text-accent-300">
-                        psów, którym pomogłam w ciągu ostatnich 5 lat
-                    </p>
-                </li>
-
-                <li class="flex flex-col -m-0.5 p-4 sm:p-8">
-                    <div
-                        class="font-heading text-3xl sm:text-5xl font-semibold text-primary mb-2 dark:text-accent-200"
-                    >
-                        24+
-                    </div>
-                    <p class="text-primary-400 dark:text-accent-300">
-                        spacery socjalizacyjne każdego miesiąca
-                    </p>
-                </li>
-
-                <li class="flex flex-col -m-0.5 p-4 sm:p-8">
-                    <div
-                        class="font-heading text-3xl sm:text-5xl font-semibold text-primary mb-2 dark:text-accent-200"
-                    >
-                        15+
-                    </div>
-                    <p class="text-primary-400 dark:text-accent-300">
-                        publikacji o naturze i zwierzętach w roku na łamach
-                        znanych pism
-                    </p>
-                </li>
-
-                <li class="flex flex-col -m-0.5 p-4 sm:p-8">
-                    <div
-                        class="font-heading text-3xl sm:text-5xl font-semibold text-primary mb-2 dark:text-accent-200"
-                    >
-                        30+
-                    </div>
-                    <p class="text-primary-400 dark:text-accent-300">
-                        poprowadzonych warsztaów i wykładów w ciągu roku
-                    </p>
-                </li>
-            </ul>
-            <!-- End List -->
-        </div>
-    </div>
-    <!-- End Col -->
-</div>
-<!-- End Grid -->
-
-<!-- Grid -->
-<div class="lg:grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 hidden">
-    <OpinieCard
+    <OpinieCardMobile
         content="Osobiście myślę że nie ma słów ani opinii, które mogłyby opowiedzieć o tym jaka jest Pani Ola, to ABSOLUTNA CZARODZIEJKA 🧚 Wystarczyła chwila i czytała z naszej suczki jak z otwartej księgi 🔮 Z narzeczonym oczywiście podejrzewamy że to nie magia, a długoletnie doświadczenie ☺️ Przez bardzo długi czas ciężko było nam znaleźć osobę, która tak płynnie potrafi przetłumaczyć psi język, mowę ciała i zachowania a do tego umiałaby pomóc nam w zrozumieniu Bonnie i jej potrzeb, a tu proszę!Z czystym sumieniem mogę polecić Panią Olę jeżeli ktoś szuka osoby, która pomoże w wybudowaniu w relacji pies-człowiek „magicznej więzi”. Dziękujemy 🫶🏻"
         name="Wiktoria"
         dog="opiekun Bonie"
     />
 
-    <OpinieCard
+    <OpinieCardMobile
         content="Z czystym sumieniem polecam współpracę z Olą. To osoba zaangażowana, skupiona, oddana swojej misji jaką jest uczenie nas - ludzi - jak czytać swoje pieski i jak zachować się w poszczególnych sytuacjach. Absurdalne że w poprzednich miejscach które odwiedziliśmy zdobyłem mniej wiedzy niż podczas jednego spotkania z Olą… baa podejście jest na tyle indywidualne że ta wspaniała osoba wie lepiej ode mnie w jakim wieku jest nasza suczka pomimo pracy z wieloma psami przez wiele lat (prędzej szef w pracy zapomni Twojego imienia niż Ola imię Twojego psiaka)- to bardzo rzadko spotykane, dlatego doceniam to niesamowicie tym bardziej jeśli w grę wchodzi dobro mojego pieska. Mógłbym wymienić jeszcze wiele rzeczy, które mnie urzekły a wręcz zaskoczyły, dlatego zawsze będę świetnie kojarzył tą współpracę i polecał dalej!❤️"
         name="Przemek"
         dog="opiekun Bonie"
     />
 
-    <OpinieCard
+    <OpinieCardMobile
         content="Zawsze i wszędzie polecam Olę. Wiedza, podejście a zarazem stanowczość. Nie ma złych psów tylko są źli opiekunowie. Ola nauczy Cię jak postępować z czworonogiem abyście Ty i On byli szczęśliwi ! ❤️❤️❤️"
         name="Sebastian"
         dog="opiekun Neli"
     />
 
-    <OpinieCard
+    <OpinieCardMobile
         content="Co można napisać o Oli? to osoba magiczna, która ma 6, 7 i 8 zmysł do psiaków. Ola patrzy i wie. Jedyne co trzeba robić to słuchać się jej rad. Mam 3 psy, każdy inny i dzięki Oli wiem co robić. Olu dziękuję za wszystko!❤️😘"
         name="Maciek"
         dog="opiekun Bonza, Alruny, Hope"
     />
 
-    <OpinieCard
+    <OpinieCardMobile
         content="Ogromna wiedza, niesamowite wyczucie, niewyobrażalna intuicja, wielka wrażliwość, plus konsekwencja i odpowiedzialność, do tego cudowne poczucie humoru, te kilka słów pomogą Wam zobrazować Olę i jej pracę👌😊"
         name="Kalina"
         dog="opiekun OyoBull"
     />
 
-    <OpinieCard
+    <OpinieCardMobile
         content="Najlepszy trener, najlepsza behawiorystka z wielką wiedzą.... A poza tym... cudowny człowiek o niezwykle wrażliwym sercu. Jestem wdzięczna, że Cię poznałam Olu.. ♥️"
         name="Beata"
         dog="opiekun Jerrego"
     />
 
-    <OpinieCard
+    <OpinieCardMobile
         content="Ogrom wiedzy i praktyki z pracy z psami i kotami. Do tego dołożone jest duże serducho, wrażliwość i empatia. Polecam, polecam, polecam!"
         name="Monika"
         dog="Centrum Zwierzak"
     />
 
-    <OpinieCard
+    <OpinieCardMobile
         content="Wspaniała osoba o mega wrażliwości. Ogromna wiedza w połączeniu z praktyką dają niesamowite efekty terapeutyczne, a także pozwalają na odpowiedni dobór metody do psa. Ona po prostu „umie w psy” i ma do tego dar ❤️ najlepsza!"
         name="Sylwia"
         dog="PIESKOLANDIA Leszno"
     />
-</div>
-<!-- End Grid -->
+
+ </div>

@@ -1,0 +1,33 @@
+---
+const { 
+    content,
+    name,
+    dog
+} = Astro.props;
+---
+
+<div
+    class="flex-shrink-0 w-[280px] bg-lightbg-400 border border-accent-500 shadow-2xs rounded-[10px] dark:border-dark-600/30 dark:bg-dark-600/30 gap-6 p-5 lg:hover:shadow-2xl/20 lg:hover:shadow-secondary-700 lg:dark:shadow-none transotion-all duration-300"
+>
+    <div class="flex-auto">
+        <p
+            class="text-xs text-primary-500 dark:text-accent-100 leading-relaxed"
+        >
+            <em>
+                {content}
+            </em>
+        </p>
+    </div>
+
+    <div class="mt-4">
+        <h3
+            class="text-sm font-heading font-semibold text-primary sm:text-base dark:text-accent"
+        >
+            {name}
+        </h3>
+        <p class="text-sm text-secondary dark:text-accent-200">
+            {dog}
+        </p>
+    </div>
+</div>
+<!-- End Card -->
